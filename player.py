@@ -1,23 +1,5 @@
-from random import randint
 from time import sleep
-
-
-print('-=' * 20)
-print('=-' * 6 + ' RPG ADVENTURE ' + '=-' * 6 )
-print('-=' * 20)
-
-# Historia parte 1
-
-print('Você é encontrado por um viajante, preso em uma cela de uma antiga prisão...')
-sleep(1.5)
-print('O viajante te coloca em sua carroça e te leva até a cidade mais proxima...')
-sleep(1.5)
-print('Você acorda e se depara com o prefeito da cidade...')
-sleep(1.5)
-print('PREFEITO: Quem é você? ')
-sleep(2)
-
-# Criação do personagem
+from random import randint
 
 player = str(input('Digite o nome do seu HERÓI: '))
 classeList = ['Guerreiro', 'Caçador', 'Mago', 'Ladrão']
@@ -90,42 +72,3 @@ print(f'AGILIDADE:   {agi}')
 print(f'ATAQUE:      {atk:.1f}')
 print(f'DEFESA:      {dfs:.1f}')
 sleep(2)
-
-# Historia parte 2
-
-print(f''' {player}: Sou um {classeList[classe]}, me chamo {player},
-passei tanto tempo jogado naquela cela imunda, que já nem me lembro mais o motivo!''')
-sleep(1.5)
-print(f''' PREFEITO: Otimo {player}, Você pode se redimir de seus crimes
-fazendo um trabalho para mim...''')
-sleep(1.5)
-print(f''' PREFEITO: O mercador precisa ir até a cidade vizinha, e precisa de uma escolta!
- Leve ele em segurança, e seus crimes estarão perdoados...''')
-sleep(3)
-
-print(' SUA JORNADA COMEÇA!')
-
-
-# Destino - batalhe ou continue
-dados = input('Pressione ENTER para rolar os dados e descobrir seu destino!')
-print('ROLANDO DADOS...')
-sleep(3)
-destino = randint(1, 2)
-if destino == 1:
-    print('Você encontrou um inimigo, prepare-se para a BATALHA!')
-    import enemys
-elif destino == 2:
-    print('Seu caminho está livre, siga em frente!')
-
-
-
-
-
-
-
-# definir as classe, criar itens, criar monstros e combate.
-
-
-
-
-
